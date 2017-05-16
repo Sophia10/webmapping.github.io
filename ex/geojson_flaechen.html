@@ -71,10 +71,8 @@
         }).addTo(map);
 
         // Farbige Flächen der Donauinsel nach Flächentyp mit Popup hinzufügen
-        typen = {}
         var donauinselFlaechen = L.geoJSON(window.DONAUINSELFLAECHEN, {
             onEachFeature : function (feature, layer) {
-                typen[feature.properties.TYP_TXT] = true;
                 var markup = '<h3>' + feature.properties.BEZEICHNUNG + '</h3>';
                 markup += '<p>' + feature.properties.ORTSBESCHREIBUNG + '</p>';
                 markup += '<strong>Details</strong>';
