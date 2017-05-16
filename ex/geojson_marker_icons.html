@@ -79,7 +79,7 @@
             5: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
             6: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png"
         };
-        var punkteSpaziergang = L.geoJSON(window.spaziergangPunkte, {
+        var punkteSpaziergang = L.geoJSON(window.STADTSPAZIERGANGPUNKTE, {
             onEachFeature : function (feature, layer) {
                 var markup = '<h3>' + layer.feature.properties.NAME + '</h3>';
                 markup += '<p>' + layer.feature.properties.BEMERKUNG + '</p>';
